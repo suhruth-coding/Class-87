@@ -4,6 +4,7 @@ var block_height = 30;
 player_x = 10;
 player_y = 10;
 var player_object = "";
+var block_image_object = "";
 function player_update(){
     fabric.Image.fromURL("player.png",function(Img){
         player_object = "Img";
@@ -29,7 +30,7 @@ function new_image(get_image){
         canvas.add(block_image_object);
     });
 }
-window.addEventListener("keyDown",my_keydown);
+window.addEventListener("keydown",my_keydown);
 function my_keydown(e){
     keyPressed = e.keyCode;
     console.log(keyPressed);
